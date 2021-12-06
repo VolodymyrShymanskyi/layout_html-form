@@ -6,6 +6,7 @@
 
 .field:invalid {
   border: 1px solid red;
+  border-radius: 1px;
 }
 
 .form-block {

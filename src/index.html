@@ -14,102 +14,104 @@
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
 
-    <form 
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
       method="post"
     >
       <fieldset class="form-block">
         <legend>Personal information</legend>
-        <label class="form-field">
+        <div class="form-field">
           <label for="name">
             Name:
           </label>
-          <input 
-            type="text" 
-            name="name" 
-            id="name" 
+          <input
+            type="text"
+            name="name"
+            id="name"
             class="field"
             required
           >
-        </label>
-  
-        <label class="form-field">
+        </div>
+
+        <div class="form-field">
           <label for="surname">
             Surname
           </label>
-          <input 
-            type="text" 
-            name="surname" 
-            id="surname" 
+          <input
+            type="text"
+            name="surname"
+            id="surname"
             class="field"
             required
           >
-        </label>
-  
-        <label class="form-field">
+        </div>
+
+        <div class="form-field">
           <label for="age">
             How old are You?
           </label>
-          <input 
-            type="number" 
-            name="age" 
-            id="age" 
+          <input
+            type="number"
+            name="age"
+            id="age"
             value="12"
+            min="12"
             max="100"
             required
           >
-        </label>
-  
-        <label class="form-field">
-          <label for="date-of-birth">
+        </div>
+
+        <div class="form-field">
+          <label for="dateOfBirth">
             Full date of birth:
           </label>
-          <input 
-            type="date" 
-            name="date of birth" 
-            id="date-of-birth" 
+          <input
+            type="date"
+            name="dateOfBirth"
+            id="dateOfBirth"
             class="field"
-            placeholder="mm/dd/yyyy" 
+            placeholder="mm/dd/yyyy"
             required
           >
-        </label>
-  
-        <label class="form-field">
-          <label for="accept-terms">
+        </div>
+
+        <div class="form-field">
+          <label for="acceptTerms">
             I accept the terms of the agreement
           </label>
-          <input 
-            type="checkbox" 
-            name="terms" 
-            id="accept-terms" 
+          <input
+            type="checkbox"
+            name="terms"
+            id="acceptTerms"
             class="field"
             required
           >
-        </label>
+        </div>
       </fieldset>
 
       <fieldset class="form-block">
         <legend>Registration</legend>
-        <label class="form-field">
+        <div class="form-field">
           <label for="email">
             E-mail:
           </label>
-          <input 
-            type="email" 
-            name="email" 
-            id="email" 
+          <input
+            type="email"
+            name="email"
+            id="email"
             class="field"
-            placeholder="email@example.com" 
+            placeholder="email@example.com"
             required
           >
-        </label>
-  
-        <label class="form-field">
+        </div>
+
+        <div class="form-field">
           <label for="password">
             Password:
           </label>
-          <input 
-            type="password" 
+          <input
+            type="password"
             name="password"
             id="password"
             class="field"
@@ -117,7 +119,7 @@
             minlength="5"
             maxlength="32"
           >
-        </label>
+        </div>
       </fieldset>
 
       <fieldset class="form-block">
@@ -125,30 +127,32 @@
         <div class="form-field">
           Do you love cats?
 
-          <label>
-            <input 
+          <label for="catsYes">
+            <input
             type="radio"
             name="cats"
             value="yes"
+            id="catsYes"
             >
             Yes
           </label>
 
-          <label>
-            <input 
+          <label for="catsNo">
+            <input
             type="radio"
             name="cats"
             value="no"
+            id="catsNo"
             >
             No
           </label>
         </div>
-        
+
         <div class="form-field">
           <label for="color">
             What is your favorite color?
           </label>
-          <input 
+          <input
           type="color"
           name="color"
           id="color"
@@ -157,35 +161,45 @@
         </div>
 
         <div class="form-field">
-          <label for="time-to-bed">
+          <label for="timeToBed">
             What time do you go to bed?
           </label>
-          <input 
+          <input
           type="time"
           name="time"
-          id="time-to-bed"
+          id="timeToBed"
           required
           >
         </div>
 
-        <label class="form-field">
+        <div class="form-field">
           What is your favorite brand of cars?
 
-          <select name="brand" required multiple>
-            <option value="" disabled selected>Choose a brand</option>
+          <select
+            name="brand"
+            required
+            multiple
+          >
+            <option
+              value=""
+              disabled
+              selected
+            >
+            Choose a brand
+            </option>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Mercedes">Mercedes</option>
           </select>
-        </label>
+        </div>
 
         <div class="form-field">
-          <label for="rate-of-work">
+          <label for="rateOfWork">
             How do you rate our work?
-            <input 
+            <input
             type="range"
             name="rate"
-            id="rate-of-work"
+            id="rateOfWork"
             required
             >
           </label>
@@ -194,16 +208,14 @@
 
       <fieldset class="form-block">
         <legend>Additional info:</legend>
-        <label class="form-field">
-          
-        </label>
-  
-        <label class="form-field">
-          
-        </label>
+        <div class="form-field">
+
+        </div>
+
+        <div class="form-field">
+
+        </div>
       </fieldset>
-
-
       <button disabled>Submit</button>
     </form>
   </body>
