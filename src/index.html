@@ -208,15 +208,26 @@
 
       <fieldset class="form-block">
         <legend>Additional info:</legend>
+        <label for="text" class="form-field">
+          Comments:
+          <textarea
+            name="feedback"
+            id="text"
+            cols="20"
+            rows="3"
+          >
+          </textarea>
+        </label>
+
         <div class="form-field">
-
-        </div>
-
-        <div class="form-field">
-
+          Woud you recommend us?
+          <select name="recommend" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
       </fieldset>
-      <button disabled>Submit</button>
+      <button>Submit</button>
     </form>
   </body>
 </html>

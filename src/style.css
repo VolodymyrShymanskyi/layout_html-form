@@ -5,8 +5,8 @@
 }
 
 .field:invalid {
-  border: 1px solid red;
-  border-radius: 1px;
+  border: 2px solid red;
+  border-radius: 5px;
 }
 
 .form-block {
